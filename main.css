@@ -6,21 +6,38 @@
     }
     
     body{
-    background-color: pink;
+    background-color: rgb(251, 251, 251);
     font-family: 'Sour Gummy', sans-serif;
+    margin: 0;
+    padding: 0;
 }
-/* how the page wrapper will appear on mobile */
 .page-wrapper{
-    /* where to change the width of the columns on desktop view */
-    width: min(100% - 3rem, 95ch);
-    margin-inline: auto;
+    width: 100%;
+    margin: 0;
 }
-/* how the page wrapper appears on desktop */
+
+#history {
+background-color: rgb(255, 241, 42);
+padding-inline: 1.5rem;
+margin-block: 0;
+}
+
+#variations{
+background-color: rgb(255, 71, 114);
+padding-inline: 1.5rem;
+margin-block: 0;
+}
+
+#alphabet {
+background-color:rgb(74, 240, 94);
+padding-inline: 1.5rem;
+margin-block: 0;
+}
 
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 0;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
@@ -30,7 +47,6 @@ grid-template-areas:
 
 #history {
 grid-area: h;
-background-color: lightcoral;
 }
 
 #variations{
@@ -43,13 +59,14 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color: rgb(251, 147, 68);
     height:200px;
+    margin: 0;
 }
 
 /* font styling area */
 h2{
-    color: firebrick;
+    color: rgb(0, 0, 0);
     font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
 }
 
@@ -67,6 +84,20 @@ h3{
     50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
     }
 }
+
+/* Mobile styles for h3 */
+@media (max-width: 799px) {
+    h3 {
+        font-size: 3em;
+    }
+}
+
+/* Color styles for h3 spans */
+.so { color: rgb(255, 71, 114); }
+.ur { color: rgb(245, 222, 93); }
+.gum { color: rgb(251, 147, 68); }
+.my { color: rgb(74, 240, 94); }
+
 /* animations for the variations section */
 .weight{
     animation: weightVariations 5s infinite;
@@ -92,7 +123,7 @@ h3{
 
 h5{
     font-size:40px;
-    color:blue;
+    color:rgb(164, 24, 57);
     margin:15px;
 }
 
