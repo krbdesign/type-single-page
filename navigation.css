@@ -85,7 +85,7 @@
   
           display: block;
           /* color of the hamburger menu */
-          background: black;
+          background: rgb(0, 0, 0);
           /* how far the hamburger menu is from the top */
           margin-top:7px;
           height: 3px;
