@@ -49,14 +49,46 @@ grid-template-areas:
 grid-area: h;
 }
 
+#history h1 {
+    font-size: 1.5em;
+}
+
+#history h2 {
+    font-size: 2.5em;
+}
+
 #variations{
 grid-area: v;
+}
+
+#variations h2 {
+    font-size: 2.5em;
+}
+
+#variations h2 {
+    font-size: 2.5em;
 }
 
 #alphabet {
 grid-area: a;
 }
+
+#alphabet h2 {
+    font-size: 2.5em;
 }
+
+}
+
+/* Mobile styles for headings */
+@media (max-width: 799px) {
+    #history h2, #variations h2, #alphabet h2 {
+        font-size: 2.5em;
+    }
+    #history h1 {
+        font-size: 1.5em;
+    }
+}
+
 /* CSS for the footer */
 footer{
     background-color: rgb(251, 147, 68);
@@ -67,13 +99,13 @@ footer{
 /* font styling area */
 h2{
     color: rgb(0, 0, 0);
-    font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+    font-variation-settings: "opsz" 16, "wght" 700, "slnt" -8;
 }
 
 h3{
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
     animation: weightChange 7s infinite;
 }
 
@@ -88,7 +120,7 @@ h3{
 /* Mobile styles for h3 */
 @media (max-width: 799px) {
     h3 {
-        font-size: 3em;
+        font-size: 4em;
     }
 }
 
@@ -106,7 +138,7 @@ h3{
     0%, 100%{
         font-variation-settings: "wght" 100, "wdth" 100;
     }
-    50%{font-variation-settings: "wght" 900, "wdth" 125;
+    50%{font-variation-settings: "wght" 900, "wdth" 100;
     }
 }
 /* where the animation is for the width change */
@@ -115,9 +147,9 @@ h3{
 }
 @keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "wght" 200, "wdth" 100;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "wght" 200, "wdth" 125;
     }
 }
 
