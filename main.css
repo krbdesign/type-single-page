@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: rgb(251, 251, 251);
+    background-image: url("assets/Sugar Texture BG.svg");
     font-family: 'Sour Gummy', sans-serif;
     margin: 0;
     padding: 0;
@@ -28,10 +28,24 @@ padding-inline: 1.5rem;
 margin-block: 0;
 }
 
+#variations img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 530px;
+}
+
 #alphabet {
 background-color:rgb(74, 240, 94);
 padding-inline: 1.5rem;
 margin-block: 0;
+}
+
+#alphabet img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 530px;
 }
 
 @media only screen and (min-width:800px){
@@ -87,6 +101,23 @@ grid-area: a;
     #history h1 {
         font-size: 1.5em;
     }
+
+    #variations img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        width: 130px;
+        height: auto;
+        margin-left: 300px;
+    }
+
+    #alphabet img {
+        display: block;
+        margin: 10px auto;
+        margin-left: 300px;
+        width: 130px;
+        height: auto;
+    }
 }
 
 /* CSS for the footer */
@@ -129,6 +160,22 @@ h3{
 .ur { color: rgb(245, 222, 93); }
 .gum { color: rgb(251, 147, 68); }
 .my { color: rgb(74, 240, 94); }
+
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-worm {
+    width: 90px;
+    height: auto;
+    margin-bottom: -90px;
+    margin-left: 230px;
+}
 
 /* animations for the variations section */
 .weight{
