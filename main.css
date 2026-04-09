@@ -45,7 +45,7 @@ margin-block: 0;
     width: 160px;
     height: auto;
     margin-bottom: 15px;
-    margin-left: 530px;
+    margin-right: -530px auto;
 }
 
 @media only screen and (min-width:800px){
