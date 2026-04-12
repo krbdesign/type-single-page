@@ -123,10 +123,12 @@ margin-block: 0;
     }
 
     #alphabet img {
+        float: none;
         display: block;
-        margin: 10px auto;
+        margin: 15px auto;
         width: 130px;
         height: auto;
+       
     }
 }
 
