@@ -11,7 +11,7 @@ transition: none !important; } }
     }
     
     body{
-    background-image: url("assets/Sugar Texture BG.svg");
+    background-image: url("assets/Sugar_Texture-BG.svg");
     font-family: 'Sour Gummy', sans-serif;
     margin: 0;
     padding: 0;
@@ -39,8 +39,7 @@ margin-block: 0;
 #variations img {
     width: 160px;
     height: auto;
-    margin-bottom: 15px;
-    margin-left: 530px;
+    margin: 0 auto 15px auto;
 }
 
 #alphabet {
@@ -66,10 +65,10 @@ margin-block: 0;
             "v h"
             "a a";
     }
-
     
     #history {
     grid-area: h;
+    padding: 1.5rem;
     }
     
     #history h1 {
@@ -82,6 +81,7 @@ margin-block: 0;
     
     #variations{
     grid-area: v;
+    padding: 1.5rem;
     }
     
     #variations h2 {
@@ -94,6 +94,7 @@ margin-block: 0;
     
     #alphabet {
     grid-area: a;
+    padding: 1.5rem;
     }
     
     #alphabet h2 {
@@ -114,10 +115,14 @@ margin-block: 0;
         font-size: 1.5em;
     }
 
+    h1, h2, h5 {
+        margin: 0;
+    }
+
     #variations img {
         float: none;
         display: block;
-        margin: 10px auto;
+        margin: 15px 0 15px auto;
         width: 130px;
         height: auto;
     }
@@ -125,10 +130,15 @@ margin-block: 0;
     #alphabet img {
         float: none;
         display: block;
-        margin: 15px auto;
+        margin: 15px 0 15px auto;
         width: 130px;
         height: auto;
+        
        
+    }
+
+    footer img {
+        margin-left: -60px;
     }
 }
 
@@ -183,8 +193,8 @@ footer img {
     grid-column: 2;
     grid-row: 2;
     box-align: center;
-    margin-left: -80px;
-    width: 150px;
+    margin-left: -60px;
+    width: 120px;
     height: auto;
 }
 
@@ -231,11 +241,24 @@ h3{
     align-items: center;
 }
 
-.hero-worm {
-    width: 130px;
-    height: auto;
-    margin-bottom: -130px;
-    margin-left: 270px;
+/* Basic button styles */
+.Button {
+    background-color: #5FBAFF;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    margin:20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+.Button:hover {
+    background-color: #1799fd;
 }
 
 /* animations for the variations section */
